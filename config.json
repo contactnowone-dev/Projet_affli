@@ -2,10 +2,10 @@
   "nomSite": "L'Horizon des Mots",
   "slogan": "Votre guide vers vos prochaines lectures",
   "menu": [
-    { "nom": "Accueil", "lien": "index.html", "image": "icons/fond-accueil.png" },
-    { "nom": "Mangas", "lien": "mangas.html", "image": "icons/fond-mangas.png" },
-    { "nom": "Romans", "lien": "romans.html", "image": "icons/fond-romans.png" },
-    { "nom": "Développement Personnel", "lien": "dev-perso.html", "image": "icons/fond-dev.png" }
+    { "nom": "Accueil", "lien": "index.html", "image": "icons/home.png" },
+    { "nom": "Mangas", "lien": "mangas.html", "image": "icons/manga.png" },
+    { "nom": "Romans", "lien": "romans.html", "image": "icons/book.png" },
+    { "nom": "Fantaisie", "lien": "dev-perso.html", "image": "icons/mind.png" }
   ],
   "produits": {
     "mangas": [
