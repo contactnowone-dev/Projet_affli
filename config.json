@@ -1,0 +1,77 @@
+{
+  "site": {
+    "nom": "L'Horizon des Mots",
+    "logo": "images/logo.png",
+    "description": "Sélection des meilleurs livres"
+  },
+  "style": {
+    "slogan": "Les meilleurs livres sélectionnés pour vous"
+  },
+  "media": {
+    "favicon": "images/favicon.png",
+    "background": "images/background.png",
+    "header_image": "images/header.jpg",
+    "footer_image": "images/footer.jpg",
+    "logo_size": "120px"
+  },
+  "couleurs": {
+    "principale": "#ff6600",
+    "secondaire": "#ffffff",
+    "header": "rgba(0, 0, 0, 0.5)",
+    "footer": "#111111",
+    "boutons": "#ff6600",
+    "texte": "#333333"
+  },
+  "typographie": {
+    "police_principale": "Inter",
+    "police_secondaire": "Roboto",
+    "taille_texte": "16px",
+    "taille_titres": {
+      "h1": "32px",
+      "h2": "26px",
+      "h3": "20px"
+    },
+    "poids": {
+      "normal": 400,
+      "gras": 700
+    },
+    "espacement_lignes": "1.6"
+  },
+  "menu": {
+    "style": "horizontal",
+    "categories": [
+      {
+        "nom": "Romans",
+        "icone": "icons/book.png",
+        "ordre": 1,
+        "lien": "romans.html"
+      },
+      {
+        "nom": "Mangas",
+        "icone": "icons/manga.png",
+        "ordre": 2,
+        "lien": "manga.html"
+      },
+      {
+        "nom": "Développement personnel",
+        "icone": "icons/mind.png",
+        "ordre": 3,
+        "lien": "dev-deperso.html"
+      }
+    ]
+  },
+  "liens": {
+    "Romans": {
+      "amazon": "LIEN-AMAZON-ROMANS",
+      "fnac": "LIEN-FNAC-ROMANS"
+    },
+    "Mangas": {
+      "amazon": "LIEN-AMAZON-MANGAS",
+      "fnac": "LIEN-FNAC-MANGAS"
+    },
+    "Développement personnel": {
+      "amazon": "LIEN-AMAZON-DEV-PERSO",
+      "fnac": "LIEN-FNAC-DEV-PERSO"
+    }
+  }
+}
