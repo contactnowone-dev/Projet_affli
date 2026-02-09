@@ -3,39 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - L'Horizon des Mots</title>
+    <title>L'Horizon des Mots</title>
     <link rel="stylesheet" href="header.css">
 </head>
 <body>
 
-<header class="header">
-    <div class="header-content">
-        <div class="site-info">
-            <img src="images/logo.png" class="logo-centre" alt="Logo">
-            <h1 class="site-name">Chargement...</h1>
-            <p class="site-slogan"></p>
+    <header class="header">
+        <img src="images/logo.png" class="logo-centre" alt="Logo">
+        <div class="header-content">
+            <div class="site-info-text">
+                <h1 class="site-name">Chargement...</h1>
+                <p class="site-slogan">Chargement...</p>
+            </div>
+            <nav class="menu">
+                <ul id="menu-list" class="menu-list"></ul>
+            </nav>
         </div>
-        <ul id="menu-list" class="menu-list"></ul>
-    </div>
-</header>
+    </header>
 
-<main class="container">
-    <section class="presentation" style="color:white; text-align:center;">
-        <h2 class="intro-title" style="color:#ff6600; font-size: 2.2rem;">Bienvenue sur L'Horizon des Mots</h2>
-        <p class="intro-text" style="font-size: 1.2rem; line-height: 1.8; max-width: 800px; margin: 0 auto;">
-            Passionné de lecture et de découvertes, j'ai créé ce site pour partager avec vous 
-            une sélection rigoureuse des meilleurs ouvrages. Mon but est de vous guider 
-            vers vos prochaines lectures coup de cœur, que ce soit en Romans, Mangas ou Développement personnel.
-        </p>
-    </section>
+    <main class="container">
+        <section class="presentation">
+            <h2> Présentation de L’Horizon des Mots</h2>
+            <div class="presentation-content">
+                <p class="intro-text">L’Horizon des Mots est un espace dédié à celles et ceux qui veulent renouer avec le plaisir simple et profond de la lecture.</p>
+                
+                <p>Notre mission est d’aider chacun à découvrir — ou redécouvrir — la magie des livres papier, ces compagnons qui traversent le temps, éveillent l’imagination et offrent une pause bienvenue dans un monde toujours plus numérique.</p>
+                
+                <p>Nous proposons des recommandations sincères, des avis construits et des sélections thématiques pensées pour guider les lecteurs, qu’ils soient débutants, curieux ou passionnés.</p>
+                
+                <p>Chaque livre mis en avant est choisi pour sa capacité à toucher, inspirer ou enrichir, jamais pour des raisons commerciales.</p>
 
-    <div id="grid-produits" class="grid-produits"></div>
-</main>
+                <div class="ethique-box">
+                    <h3>🔍 Transparence et éthique</h3>
+                    <p>Pour assurer la pérennité du site, certains liens peuvent générer une petite commission lorsqu’un lecteur décide d’acheter un livre via nos recommandations.</p>
+                    <ul class="ethique-list">
+                        <li>👉 Nos avis ne sont jamais influencés par ces commissions,</li>
+                        <li>👉 Nos choix éditoriaux restent totalement indépendants,</li>
+                        <li>👉 La priorité absolue est la qualité de l’expérience de lecture.</li>
+                    </ul>
+                    <p class="engagement">Notre engagement est simple : vous aider à trouver les livres qui vous correspondent vraiment, en toute honnêteté.</p>
+                </div>
+            </div>
+        </section>
 
-<footer class="footer">
-    <p>&copy; <span id="footer-year"></span> NOWONE</p>
-</footer>
+        <div id="grid-produits" class="grid-produits"></div>
+    </main>
 
-<script src="header.js"></script>
+    <footer class="footer">
+        <p>&copy; <span id="footer-year"></span> <span class="footer-name">NOWONE</span></p>
+    </footer>
+
+    <script src="header.js"></script>
 </body>
 </html>
