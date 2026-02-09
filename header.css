@@ -120,3 +120,75 @@ body {
     font-size: 18px;
     line-height: 1.6;
 }
+/* --- ZONE DE CONTENU PRINCIPALE --- */
+.container {
+    max-width: 1200px; /* Largeur max pour que le site ne soit pas trop étiré */
+    margin: 40px auto; /* Centre le contenu et ajoute de l'espace en haut/bas */
+    padding: 20px;
+}
+
+/* --- LA GRILLE DE PRODUITS --- */
+.grid-produits {
+    display: grid;
+    /* Crée des colonnes automatiques de 280px minimum */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px; /* Espace entre les cartes */
+}
+
+/* --- LA CARTE PRODUIT --- */
+.produit-card {
+    background: rgba(255, 255, 255, 0.05); /* Fond transparent style "verre" */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden; /* Pour que l'image ne dépasse pas des bords arrondis */
+    transition: transform 0.3s ease; /* Animation fluide au survol */
+    text-align: center;
+    color: white;
+}
+
+.produit-card:hover {
+    transform: translateY(-10px); /* La carte monte un peu au survol */
+    border-color: #ff6600; /* Elle s'illumine avec ta couleur orange */
+}
+
+/* L'image du livre */
+.produit-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover; /* Recadre l'image proprement sans la déformer */
+}
+
+/* Infos sous l'image */
+.produit-info {
+    padding: 20px;
+}
+
+.produit-titre {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+}
+
+.produit-prix {
+    color: #ff6600;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Le bouton d'affiliation */
+.btn-affiliation {
+    display: inline-block;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-affiliation:hover {
+    background: white;
+    color: #ff6600;
+}
