@@ -1,54 +1,226 @@
-* { box-sizing: border-box; }
+/* ==========================================================================
+   1. BASE & RÉGLAGES GÉNÉRAUX
+   ========================================================================== */
+* { 
+    box-sizing: border-box; 
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    min-height: 100vh;
+}
+
 body {
-    margin: 0; font-family: 'Inter', sans-serif; color: white;
     background: url("images/background.png") no-repeat center center fixed;
-    background-size: cover; display: flex; flex-direction: column; min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
+/* ==========================================================================
+   2. HEADER (Logo à gauche / Contenu vertical centré)
+   ========================================================================== */
 .header {
-    width: 100%; padding: 40px 0; position: relative;
-    display: flex; flex-direction: column; align-items: center;
-    background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(8px);
+    width: 100%;
+    padding: 40px 0;
+    position: relative; /* Pour caler le logo en absolu */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
 }
 
-/* LOGO EN HAUT A GAUCHE */
+/* LOGO FIXE EN HAUT À GAUCHE */
 .logo-centre {
-    position: absolute; top: 20px; left: 30px;
-    height: 65px !important; width: auto;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    height: 65px !important;
+    width: auto;
+    object-fit: contain;
 }
 
-/* BLOC CENTRAL */
-.header-content { display: flex; flex-direction: column; align-items: center; text-align: center; }
-.site-name { font-size: 2.5rem; text-transform: uppercase; letter-spacing: 4px; margin: 0; }
-.site-slogan { font-style: italic; margin: 10px 0 25px 0; font-size: 1.1rem; color: #ff6600; }
+/* BLOC CENTRAL (Titre, Slogan, Menu) */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
 
-/* MENU */
-.menu-list { display: flex; list-style: none; gap: 15px; padding: 0; margin: 0; flex-wrap: wrap; justify-content: center; }
+.site-name {
+    margin: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.site-slogan {
+    margin: 10px 0 25px 0;
+    font-style: italic;
+    color: #ff6600;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* ==========================================================================
+   3. MENU DE NAVIGATION
+   ========================================================================== */
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
 .menu-item a {
-    text-decoration: none; color: white; width: 140px; height: 50px;
-    display: flex; align-items: center; justify-content: center;
-    background-size: cover; background-position: center;
-    border: 1px solid rgba(255,255,255,0.3); border-radius: 8px;
-    font-weight: bold; text-transform: uppercase; font-size: 0.8rem;
-    position: relative; z-index: 1; overflow: hidden;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 145px; 
+    height: 50px; 
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.3s;
+    text-shadow: 1px 1px 3px black;
 }
-.menu-item a::after { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,0.5); z-index: -1; }
 
-/* GRILLE PRODUITS COTE A COTE */
-.container { max-width: 1200px; margin: 40px auto; padding: 0 20px; flex: 1; width: 100%; }
+.menu-item a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.menu-item a:hover {
+    transform: translateY(-3px);
+    border-color: #ff6600;
+}
+
+.menu-item a:hover::after {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================================================================
+   4. GRILLE DE PRODUITS (3 COLONNES / 2 RANGÉES)
+   ========================================================================== */
+.container {
+    max-width: 1100px; /* Largeur optimale pour 3 colonnes */
+    margin: 50px auto;
+    padding: 0 20px;
+    flex: 1;
+    width: 100%;
+}
+
 .grid-produits {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px; justify-items: center;
-}
-.produit-card {
-    background: rgba(255,255,255,0.1); border-radius: 15px; overflow: hidden; 
-    width: 100%; max-width: 300px; border: 1px solid rgba(255,255,255,0.1);
-}
-.produit-image { width: 100%; height: 350px; object-fit: cover; }
-.produit-info { padding: 20px; text-align: center; }
-.btn-affiliation {
-    background: #ff6600; color: white; text-decoration: none;
-    padding: 10px 20px; border-radius: 50px; font-weight: bold; display: inline-block; margin-top: 10px;
+    display: grid;
+    /* FORCE 3 COLONNES ÉGALES */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 35px;
+    justify-items: center;
 }
 
-.footer { background: rgba(0,0,0,0.8); padding: 30px; text-align: center; }
+.produit-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.produit-card:hover {
+    transform: translateY(-10px);
+    border-color: #ff6600;
+}
+
+.produit-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.produit-info {
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.produit-prix {
+    color: #ff6600;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.btn-affiliation {
+    display: inline-block;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn-affiliation:hover {
+    background: white;
+    color: #ff6600;
+}
+
+/* ==========================================================================
+   5. ADAPTATION MOBILE (RÉDACTION DES COLONNES)
+   ========================================================================== */
+@media (max-width: 950px) {
+    .grid-produits {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur tablette */
+    }
+}
+
+@media (max-width: 650px) {
+    .grid-produits {
+        grid-template-columns: 1fr; /* 1 seule colonne sur téléphone */
+    }
+    .logo-centre {
+        position: static; /* Le logo se remet au dessus sur petit téléphone */
+        margin-bottom: 20px;
+    }
+}
+
+/* ==========================================================================
+   6. FOOTER
+   ========================================================================== */
+.footer {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    padding: 35px;
+    margin-top: 60px;
+}

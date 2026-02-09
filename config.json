@@ -11,15 +11,26 @@
     "mangas": [
       { "titre": "Manga 1", "prix": "6.99€", "image": "images/ba.png", "link": "#" },
       { "titre": "Manga 2", "prix": "6.99€", "image": "images/ba.png", "link": "#" },
-      { "titre": "Manga 3", "prix": "6.99€", "image": "images/ba.png", "link": "#" }
+      { "titre": "Manga 3", "prix": "6.99€", "image": "images/ba.png", "link": "#" },
+      { "titre": "Manga 4", "prix": "6.99€", "image": "images/ba.png", "link": "#" },
+      { "titre": "Manga 5", "prix": "6.99€", "image": "images/ba.png", "link": "#" },
+      { "titre": "Manga 6", "prix": "6.99€", "image": "images/ba.png", "link": "#" }
     ],
     "romans": [
       { "titre": "Roman 1", "prix": "7.50€", "image": "images/ba.png", "link": "#" },
-      { "titre": "Roman 2", "prix": "7.50€", "image": "images/ba.png", "link": "#" }
+      { "titre": "Roman 2", "prix": "7.50€", "image": "images/ba.png", "link": "#" },
+      { "titre": "Roman 3", "prix": "7.50€", "image": "images/ba.png", "link": "#" },
+      { "titre": "Roman 4", "prix": "7.50€", "image": "images/ba.png", "link": "#" },
+      { "titre": "Roman 5", "prix": "7.50€", "image": "images/ba.png", "link": "#" },
+      { "titre": "Roman 6", "prix": "7.50€", "image": "images/ba.png", "link": "#" }
     ],
     "dev-perso": [
       { "titre": "Livre 1", "prix": "8.50€", "image": "images/ba.png", "link": "#" },
-      { "titre": "Livre 2", "prix": "8.50€", "image": "images/ba.png", "link": "#" }
+      { "titre": "Livre 2", "prix": "8.50€", "image": "images/ba.png", "link": "#" },
+      { "titre": "Livre 3", "prix": "8.50€", "image": "images/ba.png", "link": "#" },
+      { "titre": "Livre 4", "prix": "8.50€", "image": "images/ba.png", "link": "#" },
+      { "titre": "Livre 5", "prix": "8.50€", "image": "images/ba.png", "link": "#" },
+      { "titre": "Livre 6", "prix": "8.50€", "image": "images/ba.png", "link": "#" }
     ]
   }
 }
