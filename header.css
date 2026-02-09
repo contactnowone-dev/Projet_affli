@@ -93,3 +93,30 @@ body {
     height: 20px;
     object-fit: contain;
 }
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.presentation {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 40px;
+}
+
+.intro-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ff6600; /* Ta couleur principale */
+}
+
+.intro-text {
+    font-size: 18px;
+    line-height: 1.6;
+}

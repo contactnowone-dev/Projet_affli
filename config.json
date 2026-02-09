@@ -41,6 +41,12 @@
     "style": "horizontal",
     "categories": [
       {
+    "nom": "Accueil",
+    "icone": "icons/home.png",
+    "ordre": 0,
+    "lien": "index.html"
+  },
+      {
         "nom": "Romans",
         "icone": "icons/book.png",
         "ordre": 1,
@@ -50,7 +56,7 @@
         "nom": "Mangas",
         "icone": "icons/manga.png",
         "ordre": 2,
-        "lien": "manga.html"
+        "lien": "mangas.html"
       },
       {
         "nom": "Développement personnel",
