@@ -1,62 +1,47 @@
-// Fonction pour charger la configuration
-async function loadConfig() {
+async function chargerConfiguration() {
     try {
-        const response = await fetch("config.json");
-        
-        if (!response.ok) {
-            throw new Error(`Erreur HTTP : ${response.status}`);
-        }
-
+        const response = await fetch('config.json');
         const config = await response.json();
 
-        // 1. Mise à jour des textes
-        document.querySelector(".site-name").textContent = config.site.nom;
-        document.querySelector(".site-slogan").textContent = config.style.slogan;
+        document.querySelectorAll('.site-name').forEach(el => el.textContent = config.nomSite);
+        document.querySelectorAll('.site-slogan').forEach(el => el.textContent = config.slogan);
 
-        // 2. Mise à jour du Logo
-        const logo = document.querySelector(".logo");
-        if (config.site.logo) {
-            logo.src = config.site.logo;
-            logo.style.width = config.media.logo_size || "60px";
+        const menuList = document.getElementById('menu-list');
+        if (menuList) {
+            menuList.innerHTML = '';
+            config.menu.forEach(item => {
+                const li = document.createElement('li');
+                li.className = "menu-item";
+                const a = document.createElement('a');
+                a.href = item.lien;
+                a.textContent = item.nom;
+                a.style.backgroundImage = `url('${item.image}')`;
+                li.appendChild(a);
+                menuList.appendChild(li);
+            });
         }
 
-        // 3. Couleur du Header
-        document.getElementById("header").style.backgroundColor = config.couleurs.header;
+        const grid = document.getElementById('grid-produits');
+        if (grid) {
+            const pagePath = window.location.pathname.split("/").pop() || "index.html";
+            const categorie = pagePath.replace(".html", "");
 
-        // 4. Construction du Menu
-        const menuList = document.getElementById("menu-list");
-        menuList.innerHTML = ""; // On nettoie le menu existant
-
-// --- DANS LA BOUCLE config.menu.categories.forEach ---
-config.menu.categories
-    .sort((a, b) => a.ordre - b.ordre)
-    .forEach(cat => {
-        const li = document.createElement("li");
-        li.classList.add("menu-item");
-
-        // On crée un lien autour de l'icône et du texte
-        const link = document.createElement("a");
-        link.href = cat.lien; // Utilise le lien défini dans le JSON
-        link.style.textDecoration = "none"; // Enlève le soulignement bleu
-        link.style.color = "inherit"; // Garde la couleur définie
-        link.style.display = "flex";
-        link.style.alignItems = "center";
-        link.style.gap = "10px";
-
-        link.innerHTML = `
-            <img src="${cat.icone}" class="menu-icon" alt="">
-            <span>${cat.nom}</span>
-        `;
-
-        li.appendChild(link);
-        menuList.appendChild(li);
-    });
-
-    } catch (error) {
-        console.error("Erreur Nowone ! Impossible de charger le JSON :", error);
-        document.querySelector(".site-name").textContent = "Erreur de chargement";
-    }
+            if (categorie !== "index" && config.produits[categorie]) {
+                grid.innerHTML = '';
+                config.produits[categorie].forEach(prod => {
+                    grid.innerHTML += `
+                        <article class="produit-card">
+                            <img src="${prod.image}" class="produit-image">
+                            <div class="produit-info">
+                                <h3>${prod.titre}</h3>
+                                <p>${prod.prix}</p>
+                                <a href="${prod.link}" class="btn-affiliation" target="_blank">Acheter</a>
+                            </div>
+                        </article>`;
+                });
+            }
+        }
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+    } catch (e) { console.error(e); }
 }
-
-// Lancement de la fonction
-loadConfig();
+chargerConfiguration();

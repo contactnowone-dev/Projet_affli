@@ -3,39 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'Horizon des Mots</title>
+    <title>Accueil - L'Horizon des Mots</title>
     <link rel="stylesheet" href="header.css">
 </head>
 <body>
 
-<header id="header" class="header">
-    <img class="logo" alt="Logo du site">
-    
+<header class="header">
     <div class="header-content">
         <div class="site-info">
-            <h1 class="site-name"> Chargement... </h1>
+            <img src="images/logo.png" class="logo-centre" alt="Logo">
+            <h1 class="site-name">Chargement...</h1>
             <p class="site-slogan"></p>
         </div>
-
-        <nav class="menu">
-            <ul id="menu-list" class="menu-list">
-                </ul>
-        </nav>
+        <ul id="menu-list" class="menu-list"></ul>
     </div>
 </header>
+
 <main class="container">
-    <section id="presentation" class="presentation">
-        <h2 class="intro-title">Bienvenue sur L'Horizon des Mots</h2>
-        <p class="intro-text">
+    <section class="presentation" style="color:white; text-align:center;">
+        <h2 class="intro-title" style="color:#ff6600; font-size: 2.2rem;">Bienvenue sur L'Horizon des Mots</h2>
+        <p class="intro-text" style="font-size: 1.2rem; line-height: 1.8; max-width: 800px; margin: 0 auto;">
             Passionné de lecture et de découvertes, j'ai créé ce site pour partager avec vous 
             une sélection rigoureuse des meilleurs ouvrages. Mon but est de vous guider 
             vers vos prochaines lectures coup de cœur, que ce soit en Romans, Mangas ou Développement personnel.
         </p>
     </section>
 
-    <div id="grid-produits" class="grid-produits">
-        </div>
+    <div id="grid-produits" class="grid-produits"></div>
 </main>
+
+<footer class="footer">
+    <p>&copy; <span id="footer-year"></span> <span class="site-name"></span></p>
+</footer>
 
 <script src="header.js"></script>
 </body>

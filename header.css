@@ -1,194 +1,54 @@
-/* --- BASE --- */
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
+* { box-sizing: border-box; }
 body {
-    background-image: url("images/background.png");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    min-height: 100vh;
+    margin: 0; font-family: 'Inter', sans-serif; color: white;
+    background: url("images/background.png") no-repeat center center fixed;
+    background-size: cover; display: flex; flex-direction: column; min-height: 100vh;
 }
 
-/* --- HEADER --- */
 .header {
-    position: relative;
-    display: flex;
-    justify-content: center; /* Centre le bloc header-content */
-    padding: 40px 20px;
-    color: white;
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%; padding: 40px 0; position: relative;
+    display: flex; flex-direction: column; align-items: center;
+    background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(8px);
 }
 
-.header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+/* LOGO EN HAUT A GAUCHE */
+.logo-centre {
+    position: absolute; top: 20px; left: 30px;
+    height: 65px !important; width: auto;
 }
 
-/* --- LOGO --- */
-.logo {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
+/* BLOC CENTRAL */
+.header-content { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.site-name { font-size: 2.5rem; text-transform: uppercase; letter-spacing: 4px; margin: 0; }
+.site-slogan { font-style: italic; margin: 10px 0 25px 0; font-size: 1.1rem; color: #ff6600; }
 
-.logo:hover {
-    transform: scale(1.05);
+/* MENU */
+.menu-list { display: flex; list-style: none; gap: 15px; padding: 0; margin: 0; flex-wrap: wrap; justify-content: center; }
+.menu-item a {
+    text-decoration: none; color: white; width: 140px; height: 50px;
+    display: flex; align-items: center; justify-content: center;
+    background-size: cover; background-position: center;
+    border: 1px solid rgba(255,255,255,0.3); border-radius: 8px;
+    font-weight: bold; text-transform: uppercase; font-size: 0.8rem;
+    position: relative; z-index: 1; overflow: hidden;
 }
+.menu-item a::after { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,0.5); z-index: -1; }
 
-/* --- TITRES --- */
-.site-info {
-    text-align: center;
-}
-
-.site-name {
-    margin: 0;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.site-slogan {
-    margin: 5px 0 0 0;
-    font-style: italic;
-    opacity: 0.9;
-}
-
-/* --- MENU --- */
-.menu-list {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
-}
-
-.menu-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: 0.3s;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-.menu-item:hover {
-    background: rgba(255, 255, 255, 0.1);
-    color: #ff6600;
-}
-
-.menu-icon {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
-}
-.container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.presentation {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    padding: 30px;
-    border-radius: 15px;
-    color: white;
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    margin-bottom: 40px;
-}
-
-.intro-title {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #ff6600; /* Ta couleur principale */
-}
-
-.intro-text {
-    font-size: 18px;
-    line-height: 1.6;
-}
-/* --- ZONE DE CONTENU PRINCIPALE --- */
-.container {
-    max-width: 1200px; /* Largeur max pour que le site ne soit pas trop étiré */
-    margin: 40px auto; /* Centre le contenu et ajoute de l'espace en haut/bas */
-    padding: 20px;
-}
-
-/* --- LA GRILLE DE PRODUITS --- */
+/* GRILLE PRODUITS COTE A COTE */
+.container { max-width: 1200px; margin: 40px auto; padding: 0 20px; flex: 1; width: 100%; }
 .grid-produits {
-    display: grid;
-    /* Crée des colonnes automatiques de 280px minimum */
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px; /* Espace entre les cartes */
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px; justify-items: center;
 }
-
-/* --- LA CARTE PRODUIT --- */
 .produit-card {
-    background: rgba(255, 255, 255, 0.05); /* Fond transparent style "verre" */
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    overflow: hidden; /* Pour que l'image ne dépasse pas des bords arrondis */
-    transition: transform 0.3s ease; /* Animation fluide au survol */
-    text-align: center;
-    color: white;
+    background: rgba(255,255,255,0.1); border-radius: 15px; overflow: hidden; 
+    width: 100%; max-width: 300px; border: 1px solid rgba(255,255,255,0.1);
 }
-
-.produit-card:hover {
-    transform: translateY(-10px); /* La carte monte un peu au survol */
-    border-color: #ff6600; /* Elle s'illumine avec ta couleur orange */
-}
-
-/* L'image du livre */
-.produit-image {
-    width: 100%;
-    height: 350px;
-    object-fit: cover; /* Recadre l'image proprement sans la déformer */
-}
-
-/* Infos sous l'image */
-.produit-info {
-    padding: 20px;
-}
-
-.produit-titre {
-    margin: 0 0 10px 0;
-    font-size: 1.2rem;
-}
-
-.produit-prix {
-    color: #ff6600;
-    font-size: 1.4rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-/* Le bouton d'affiliation */
+.produit-image { width: 100%; height: 350px; object-fit: cover; }
+.produit-info { padding: 20px; text-align: center; }
 .btn-affiliation {
-    display: inline-block;
-    background: #ff6600;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-weight: bold;
-    transition: background 0.3s;
+    background: #ff6600; color: white; text-decoration: none;
+    padding: 10px 20px; border-radius: 50px; font-weight: bold; display: inline-block; margin-top: 10px;
 }
 
-.btn-affiliation:hover {
-    background: white;
-    color: #ff6600;
-}
+.footer { background: rgba(0,0,0,0.8); padding: 30px; text-align: center; }
