@@ -2,31 +2,11 @@
   "nomSite": "L'Horizon des Mots",
   "slogan": "Votre guide vers vos prochaines lectures",
   "menu": [
-    {
-      "nom": "Accueil",
-      "lien": "index.html",
-      "image": "images/fond-accueil.jpg"
-    },
-    {
-      "nom": "Mangas",
-      "lien": "mangas.html",
-      "image": "images/fond-mangas.jpg"
-    },
-    {
-      "nom": "Romans",
-      "lien": "romans.html",
-      "image": "images/fond-romans.jpg"
-    },
-    {
-      "nom": "Contact",
-      "lien": "contact.html",
-      "image": "images/fond-contact.jpg"
-    },
-    {
-      "nom": "L'Envers du Décor",
-      "lien": "stack.html",
-      "image": "images/fond-contact.jpg"
-    }
+    { "nom": "Accueil", "lien": "index.html" },
+    { "nom": "Mangas", "lien": "mangas.html" },
+    { "nom": "Romans", "lien": "romans.html" },
+    { "nom": "Contact", "lien": "contact.html" },
+    { "nom": "L'Envers du Décor", "lien": "stack.html" }
   ],
   "produits": {
     "mangas": [
@@ -49,7 +29,7 @@
         "link": "https://amzn.to/4txjJJy"
       },
       {
-        "titre": "Demon Slayer: Pack découverte T01 & T02",
+        "titre": "Demon Slayer: Pack découverte",
         "prix": "7.29€",
         "image": "https://m.media-amazon.com/images/I/81JLNWDWQuL._SL1500_.jpg",
         "link": "https://amzn.to/3Oh7a4G"
@@ -61,7 +41,7 @@
         "link": "https://amzn.to/3O2Tjix"
       },
       {
-        "titre": "1000 modèles ultra-simples à dessiner en pas à pas Manga",
+        "titre": "1000 modèles Manga",
         "prix": "21.95€",
         "image": "https://m.media-amazon.com/images/I/71xWCbV4rQL._SL1500_.jpg",
         "link": "https://amzn.to/4ckOICf"
@@ -73,71 +53,11 @@
         "prix": "7.50€",
         "image": "images/ba.png",
         "link": "#"
-      },
-      {
-        "titre": "Roman 2",
-        "prix": "7.50€",
-        "image": "images/ba.png",
-        "link": "#"
-      },
-      {
-        "titre": "Roman 3",
-        "prix": "7.50€",
-        "image": "images/ba.png",
-        "link": "#"
-      },
-      {
-        "titre": "Roman 4",
-        "prix": "7.50€",
-        "image": "images/ba.png",
-        "link": "#"
-      },
-      {
-        "titre": "Roman 5",
-        "prix": "7.50€",
-        "image": "images/ba.png",
-        "link": "#"
-      },
-      {
-        "titre": "Roman 6",
-        "prix": "7.50€",
-        "image": "images/ba.png",
-        "link": "#"
       }
     ],
     "dev-perso": [
       {
         "titre": "Livre 1",
-        "prix": "8.50€",
-        "image": "images/ba.png",
-        "link": "#"
-      },
-      {
-        "titre": "Livre 2",
-        "prix": "8.50€",
-        "image": "images/ba.png",
-        "link": "#"
-      },
-      {
-        "titre": "Livre 3",
-        "prix": "8.50€",
-        "image": "images/ba.png",
-        "link": "#"
-      },
-      {
-        "titre": "Livre 4",
-        "prix": "8.50€",
-        "image": "images/ba.png",
-        "link": "#"
-      },
-      {
-        "titre": "Livre 5",
-        "prix": "8.50€",
-        "image": "images/ba.png",
-        "link": "#"
-      },
-      {
-        "titre": "Livre 6",
         "prix": "8.50€",
         "image": "images/ba.png",
         "link": "#"
