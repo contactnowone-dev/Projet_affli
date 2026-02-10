@@ -33,13 +33,12 @@ body {
     backdrop-filter: blur(8px);
 }
 
-/* TON LOGO UNIFORMISÉ (Rond + Liseré Orange) */
 .logo-centre {
     position: absolute;
     top: 25px;
     left: 35px;
     height: 70px !important;
-    width: 70px !important; /* Carré parfait pour faire un rond */
+    width: 70px !important;
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid #ff6600;
@@ -52,22 +51,20 @@ body {
     box-shadow: 0 0 15px rgba(255, 102, 0, 0.5);
 }
 
-/* LE CONTENEUR CENTRAL (Texte + Menu) */
 .header-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     width: 100%;
-    gap: 50px; /* Grand espace entre texte et menu */
+    gap: 50px;
 }
 
-/* LE GROUPE TEXTE (Nom + Slogan) */
 .site-info-text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px; /* Espace entre titre et slogan */
+    gap: 20px;
 }
 
 .site-name {
@@ -82,13 +79,13 @@ body {
 .site-slogan {
     margin: 0;
     font-style: italic;
-    color: white; /* Blanc pour la sobriété */
+    color: white;
     font-size: 1.3rem;
     opacity: 0.9;
 }
 
 /* ==========================================================================
-   3. MENU DE NAVIGATION (Adaptable)
+   3. MENU DE NAVIGATION
    ========================================================================== */
 .menu-list {
     display: flex;
@@ -104,9 +101,9 @@ body {
 .menu-item a {
     text-decoration: none;
     color: white;
-    min-width: 155px; /* Minimum pour l'alignement */
+    min-width: 155px;
     height: 55px;
-    padding: 0 20px; /* Espace pour les textes longs */
+    padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,7 +135,7 @@ body {
 }
 
 /* ==========================================================================
-   4. SECTION PRÉSENTATION (Accueil)
+   4. SECTION PRÉSENTATION & CONTENU
    ========================================================================== */
 .presentation {
     max-width: 900px;
@@ -162,23 +159,42 @@ body {
 .intro-text {
     font-size: 1.25rem;
     font-weight: bold;
-    color: #ff6600 !important; /* Orange forcé pour l'accentuation */
+    color: #ff6600 !important;
     text-align: center;
     margin-bottom: 25px;
 }
 
+/* Correction des boites et textes */
 .ethique-box {
     margin-top: 40px;
     padding: 30px;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 15px;
     border-left: 5px solid #ff6600;
+    color: white;
 }
 
 .ethique-box h3 { color: #ff6600; margin-top: 0; }
+.ethique-box p { color: white; }
+
 .ethique-list { list-style: none; padding: 0; }
-.ethique-list li { margin-bottom: 10px; }
-.engagement { margin-top: 20px; font-weight: bold; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; }
+.ethique-list li { margin-bottom: 10px; color: white; }
+
+.engagement { 
+    margin-top: 20px; 
+    font-weight: bold; 
+    text-align: center; 
+    border-top: 1px solid rgba(255,255,255,0.1); 
+    padding-top: 20px; 
+    color: white;
+}
+
+.grid-stack {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+}
 
 /* ==========================================================================
    5. PAGE CONTACT
@@ -232,14 +248,7 @@ body {
 
 .footer p { font-size: 1.1rem; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; }
 
-.grid-stack {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-top: 30px;
-}
-
-/* Pour que ce soit joli sur téléphone aussi */
+/* Responsive */
 @media (max-width: 600px) {
     .grid-stack {
         grid-template-columns: 1fr;
