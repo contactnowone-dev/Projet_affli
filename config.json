@@ -6,7 +6,7 @@
     { "nom": "Mangas", "lien": "mangas.html", "image": "images/fond-mangas.jpg" },
     { "nom": "Romans", "lien": "romans.html", "image": "images/fond-romans.jpg" },
     { "nom": "Contact", "lien": "contact.html", "image": "images/fond-contact.jpg" },
-    { "nom": "Stack", "lien": "stack.html", "image": "images/fond-contact.jpg" }
+    { "nom": "L'Envers du Décor", "lien": "stack.html", "image": "images/fond-contact.jpg" }
   ],
   "produits": {
     "mangas": [
