@@ -254,3 +254,11 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+.card img, .produit img {
+    width: 100%;       /* Prend toute la largeur de la carte */
+    height: 250px;     /* On force une hauteur identique pour tous */
+    object-fit: contain; /* L'image s'adapte sans être écrasée ou coupée */
+    background-color: #f9f9f9; /* Un petit fond gris si l'image est plus étroite */
+    margin-bottom: 10px;
+}
