@@ -190,3 +190,49 @@ body {
 }
 
 .footer p { font-size: 1.1rem; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; }
+
+/* ==========================================================================
+   9. PAGE CONTACT
+   ========================================================================== */
+.contact-card {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+}
+
+.contact-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 50%; /* Pour ton logo rond */
+    border: 3px solid #ff6600;
+}
+
+.btn-contact {
+    display: inline-block;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-contact:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 102, 0, 0.4);
+}
+
+.social-text {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
