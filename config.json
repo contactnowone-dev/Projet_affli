@@ -5,6 +5,7 @@
     { "nom": "Accueil", "lien": "index.html" },
     { "nom": "Mangas", "lien": "mangas.html" },
     { "nom": "Romans", "lien": "romans.html" },
+    { "nom": "Fantasy", "lien": "fantasy.html" },
     { "nom": "Contact", "lien": "contact.html" },
     { "nom": "L'Envers du Décor", "lien": "stack.html" }
   ],
@@ -48,20 +49,30 @@
       }
     ],
     "romans": [
-      {
-        "titre": "Roman 1",
-        "prix": "7.50€",
-        "image": "images/ba.png",
-        "link": "#"
-      }
+      { "titre": "Prochainement", "prix": "0.00€", "image": "images/ba.png", "link": "#" },
+      { "titre": "Prochainement", "prix": "0.00€", "image": "images/ba.png", "link": "#" },
+      { "titre": "Prochainement", "prix": "0.00€", "image": "images/ba.png", "link": "#" },
+      { "titre": "Prochainement", "prix": "0.00€", "image": "images/ba.png", "link": "#" },
+      { "titre": "Prochainement", "prix": "0.00€", "image": "images/ba.png", "link": "#" },
+      { "titre": "Prochainement", "prix": "0.00€", "image": "images/ba.png", "link": "#" }
     ],
-    "dev-perso": [
+    "fantasy": [
       {
-        "titre": "Livre 1",
-        "prix": "8.50€",
-        "image": "images/ba.png",
-        "link": "#"
-      }
+        "titre": "Elric, Tome 1 : Elric des dragons",
+        "prix": "11.20€",
+        "image": "https://m.media-amazon.com/images/I/71X8kGqIByL._SL1500_.jpg",
+        "link": "https://amzn.to/3P1K7I6"
+      },
+      {
+        "titre": "#",
+        "prix": "10.90€",
+        "image": "https://m.media-amazon.com/images/I/71Zp+3p8vNL._SL1500_.jpg",
+        "link": "https://amzn.to/3uTfG1Z"
+      },
+      { "titre": " Tome 3 - À venir", "prix": "0.00€", "image": "images/ba.png", "link": "#" },
+      { "titre": "ric Tome 4 - À venir", "prix": "0.00€", "image": "images/ba.png", "link": "#" },
+      { "titre": "ic Tome 5 - À venir", "prix": "0.00€", "image": "images/ba.png", "link": "#" },
+      { "titre": "E Tome 6 - À venir", "prix": "0.00€", "image": "images/ba.png", "link": "#" }
     ]
   }
 }
