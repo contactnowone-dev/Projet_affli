@@ -20,7 +20,7 @@ body {
 }
 
 /* ==========================================================================
-   2. HEADER (Titre, Slogan et Logo)
+   2. HEADER (Titre Orange, Slogan et Logo)
    ========================================================================== */
 .header {
     width: 100%;
@@ -49,8 +49,8 @@ body {
 .site-info-text {
     display: flex;
     flex-direction: column;
-    align-items: center; /* CENTRE LE CONTENU */
-    text-align: center;    /* CENTRE LE TEXTE */
+    align-items: center;
+    text-align: center;
     width: 100%;
     gap: 15px;
 }
@@ -60,7 +60,7 @@ body {
     font-size: 3.5rem;
     text-transform: uppercase;
     letter-spacing: 6px;
-    color: #ff6600; /* On remplace 'white' par ton orange */
+    color: #ff6600; /* Ton beau titre en Orange */
     text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.8);
     font-weight: bold;
 }
@@ -71,7 +71,7 @@ body {
     color: white;
     font-size: 1.3rem;
     opacity: 0.9;
-    text-align: center; /* S'ASSURE QUE LE SLOGAN EST CENTRÉ */
+    text-align: center;
 }
 
 /* ==========================================================================
@@ -125,7 +125,6 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* On force le blanc et l'espacement pour les paragraphes de l'accueil */
 .presentation p {
     color: white !important;
     margin-bottom: 25px; 
@@ -138,6 +137,14 @@ body {
     text-align: center;
     margin-bottom: 35px;
     font-size: 2.2rem;
+}
+
+/* Éléments de la liste en Orange */
+.presentation li {
+    color: #ff6600 !important;
+    margin-bottom: 12px;
+    font-weight: bold;
+    list-style-position: inside;
 }
 
 .ethique-box {
@@ -214,7 +221,7 @@ body {
 }
 
 /* ==========================================================================
-   6. PAGE CONTACT & FOOTER
+   6. PAGE CONTACT & LOGO RÉPARÉ
    ========================================================================== */
 .contact-card {
     max-width: 600px;
@@ -226,9 +233,23 @@ body {
     text-align: center;
 }
 
+.contact-card .contact-logo {
+    width: 180px !important;
+    height: 180px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    border: 3px solid #ff6600 !important;
+    margin: 0 auto 30px auto;
+    display: block;
+    box-shadow: 0 0 20px rgba(255, 102, 0, 0.3);
+}
+
 .contact-card h2 { color: #ff6600 !important; }
 .contact-card p { color: white !important; }
 
+/* ==========================================================================
+   7. FOOTER
+   ========================================================================== */
 .footer {
     background: rgba(0, 0, 0, 0.9);
     padding: 50px;
@@ -238,7 +259,7 @@ body {
 }
 
 /* ==========================================================================
-   7. RESPONSIVE
+   8. RESPONSIVE
    ========================================================================== */
 @media (max-width: 992px) { .grid-produits { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 600px) { 

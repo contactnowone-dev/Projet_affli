@@ -58,21 +58,21 @@
     ],
     "fantasy": [
       {
-        "titre": "Elric, Tome 1 : Elric des dragons",
-        "prix": "11.20€",
-        "image": "https://m.media-amazon.com/images/I/71X8kGqIByL._SL1500_.jpg",
-        "link": "https://amzn.to/3P1K7I6"
+        "titre": "Les Gardiens de Ravenwood Léveil des Anciens",
+        "prix": "14.76€",
+        "image": "https://m.media-amazon.com/images/I/71mbVxywXWL._SL1499_.jpg",
+        "link": "https://amzn.to/4a5U1UI"
       },
       {
-        "titre": "#",
-        "prix": "10.90€",
-        "image": "https://m.media-amazon.com/images/I/71Zp+3p8vNL._SL1500_.jpg",
-        "link": "https://amzn.to/3uTfG1Z"
+        "titre": "Le Royaume d'Eauroche",
+        "prix": "26.90€",
+        "image": "https://m.media-amazon.com/images/I/713Id1dmeCL._SL1119_.jpg",
+        "link": "https://amzn.to/4a7xqXT"
       },
-      { "titre": " Tome 3 - À venir", "prix": "0.00€", "image": "images/ba.png", "link": "#" },
-      { "titre": "ric Tome 4 - À venir", "prix": "0.00€", "image": "images/ba.png", "link": "#" },
-      { "titre": "ic Tome 5 - À venir", "prix": "0.00€", "image": "images/ba.png", "link": "#" },
-      { "titre": "E Tome 6 - À venir", "prix": "0.00€", "image": "images/ba.png", "link": "#" }
+      { "titre": " Le Temps des sorcières", "prix": "10.40€", "image": "https://m.media-amazon.com/images/I/71GZDGeSPHL._SL1500_.jpg", "link": "https://amzn.to/46IHS5R" },
+      { "titre": "Le Royaume des Ordres", "prix": "10.54€", "image": "https://m.media-amazon.com/images/I/71GkR58j33L._SL1499_.jpg", "link": "https://m.media-amazon.com/images/I/71GkR58j33L._SL1499_.jpg" },
+      { "titre": "Chroniques d'Alaha ", "prix": "19.90€", "image": "https://m.media-amazon.com/images/I/61Z2EKKOHKL._SL1157_.jpg", "link": "https://amzn.to/4cjSHPm" },
+      { "titre": "Les Dévoreurs de livres", "prix": "25.90€", "image": "https://m.media-amazon.com/images/I/61nXv61q3LL._SL1119_.jpg", "link": "https://amzn.to/4qqm8Tm" }
     ]
   }
 }
