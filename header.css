@@ -267,3 +267,37 @@ body {
     .site-name { font-size: 2.2rem; }
     .container h2 { font-size: 2rem !important; }
 }
+
+/* Style pour les boutons en attente */
+.btn-soon {
+    display: inline-block;
+    padding: 8px 20px;
+    border: 1px dashed #ff6600; /* Bordure en pointillés pour l'effet "à venir" */
+    color: #ff6600;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    opacity: 0.6; /* Un peu transparent */
+    cursor: default; /* Pas de main au survol car non cliquable */
+    background: rgba(255, 102, 0, 0.05);
+}
+/* Container pour aligner les boutons en colonne comme un menu */
+.contact-menu-soon {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+/* Style des boutons "Bientôt" */
+.btn-soon {
+    width: 80%; /* Pour qu'ils aient tous la même largeur */
+    max-width: 250px;
+    padding: 10px;
+    border: 1px dashed rgba(255, 102, 0, 0.5);
+    color: rgba(255, 102, 0, 0.7);
+    font-size: 0.85rem;
+    border-radius: 5px;
+    background: rgba(255, 102, 0, 0.05);
+    cursor: not-allowed; /* Curseur qui montre qu'on ne peut pas cliquer */
+}
