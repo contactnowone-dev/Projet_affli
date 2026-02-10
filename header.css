@@ -231,3 +231,17 @@ body {
 }
 
 .footer p { font-size: 1.1rem; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; }
+
+.grid-stack {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Pour que ce soit joli sur téléphone aussi */
+@media (max-width: 600px) {
+    .grid-stack {
+        grid-template-columns: 1fr;
+    }
+}

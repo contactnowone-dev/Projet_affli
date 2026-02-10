@@ -2,33 +2,58 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Ma Stack Technique - Nowone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Envers du Décor - L'Horizon des Mots</title>
+    <link rel="stylesheet" href="header.css">
 </head>
 <body>
-    <h1>Ma Boîte à Outils</h1>
 
-    <section>
-        <h2>🌍 Développement Web</h2>
-        <ul>
-            <li><strong>HTML5 :</strong> Structure des pages (en cours d'apprentissage).</li>
-            <li><strong>CSS3 :</strong> Mise en forme et design (prochaine étape).</li>
-        </ul>
-    </section>
+    <header class="header">
+        <a href="index.html"><img src="images/logo.png" class="logo-centre" alt="Logo"></a>
+        <div class="header-content">
+            <div class="site-info-text">
+                <h1 class="site-name">L'Envers du Décor</h1>
+                <p class="site-slogan">Ma stack & mes outils</p>
+            </div>
+            <nav class="menu">
+                <ul id="menu-list" class="menu-list"></ul>
+            </nav>
+        </div>
+    </header>
 
-    <section>
-        <h2>⚙️ Gestion de Version</h2>
-        <ul>
-            <li><strong>Git :</strong> Local pour le suivi des modifications.</li>
-            <li><strong>GitHub :</strong> Hébergement du code et collaboration.</li>
-        </ul>
-    </section>
+    <main class="container">
+        <section class="presentation">
+            <div class="intro-text">Comment ce site a été construit</div>
+            <p>Ici, pas de constructeur de page automatique ou de solution toute faite. J'ai choisi de coder ce site à la main pour garder le contrôle total sur mon impact numérique et mon éthique.</p>
+            
+            <div class="grid-stack">
+                <div class="ethique-box">
+                    <h3>Frontend</h3>
+                    <ul class="ethique-list">
+                        <li><strong>HTML5</strong> - Structure sémantique</li>
+                        <li><strong>CSS3</strong> - Design & Flexbox</li>
+                        <li><strong>JavaScript</strong> - Logique dynamique</li>
+                    </ul>
+                </div>
 
-    <section>
-        <h2>🖥️ Environnement</h2>
-        <ul>
-            <li><strong>VS Code :</strong> Mon éditeur de texte principal.</li>
-            <li><strong>Terminal :</strong> Pour les commandes Git.</li>
-        </ul>
-    </section>
+                <div class="ethique-box">
+                    <h3>Workflow</h3>
+                    <ul class="ethique-list">
+                        <li><strong>VS Code</strong> - Éditeur de code</li>
+                        <li><strong>Git</strong> - Gestion de version</li>
+                        <li><strong>GitHub</strong> - Hébergement</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="engagement">Chaque ligne de code est écrite avec patience et curiosité.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="footer-year"></span> <span class="footer-name">NOWONE</span></p>
+    </footer>
+
+    <script src="header.js"></script>
 </body>
 </html>
