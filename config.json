@@ -49,12 +49,12 @@
       }
     ],
     "romans": [
-      { "titre": "Prochainement", "prix": "0.00€", "image": "images/ba.png", "link": "#" },
-      { "titre": "Prochainement", "prix": "0.00€", "image": "images/ba.png", "link": "#" },
-      { "titre": "Prochainement", "prix": "0.00€", "image": "images/ba.png", "link": "#" },
-      { "titre": "Prochainement", "prix": "0.00€", "image": "images/ba.png", "link": "#" },
-      { "titre": "Prochainement", "prix": "0.00€", "image": "images/ba.png", "link": "#" },
-      { "titre": "Prochainement", "prix": "0.00€", "image": "images/ba.png", "link": "#" }
+      { "titre": "Je suis Romane Monnier", "prix": "15.99€", "image": "https://m.media-amazon.com/images/I/81mYURm7UwL._SL1500_.jpg", "link": "https://amzn.to/4kw0v2L" },
+      { "titre": "Méfie-toi", "prix": "23.00€", "image": "https://m.media-amazon.com/images/I/71fO4aDlErL._SL1285_.jpg", "link": "https://amzn.to/4a9IFiC" },
+      { "titre": "La Mariée portait des bottes jaunes", "prix": "24.90€", "image": "https://m.media-amazon.com/images/I/61jQ0DdzcwL._SL1500_.jpg", "link": "https://amzn.to/4amL4oH" },
+      { "titre": "Œuvres", "prix": "30.00€", "image": "https://m.media-amazon.com/images/I/81QjOYgiCiL._SL1500_.jpg", "link": "https://amzn.to/4s1SjKj" },
+      { "titre": "Tout le monde aime Clara", "prix": "20.00€", "image": "https://m.media-amazon.com/images/I/71GcDFlXmWL._SL1500_.jpg", "link": "https://amzn.to/4a7yX02" },
+      { "titre": "La mélodie du coeur qui bat", "prix": "9.90€", "image": "https://m.media-amazon.com/images/I/21aagdQe2xL.jpg", "link": "https://amzn.to/400z2wx" }
     ],
     "fantasy": [
       {
