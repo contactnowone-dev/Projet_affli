@@ -4,58 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'Envers du Décor - L'Horizon des Mots</title>
+    <meta name="description" content="Découvrez comment ce site a été créé. Nowone vous présente les outils et technologies utilisés pour bâtir cette plateforme de recommandation.">
+    <meta name="keywords" content="développement web, stack technique, HTML, CSS, JavaScript, GitHub">
+    <meta name="author" content="Nowone">
     <link rel="stylesheet" href="header.css">
 </head>
 <body>
 
-    <header class="header">
-        <a href="index.html"><img src="images/logo.png" class="logo-centre" alt="Logo"></a>
-        <div class="header-content">
-            <div class="site-info-text">
-                <h1 class="site-name">L'Envers du Décor</h1>
-                <p class="site-slogan">Ma stack & mes outils</p>
-            </div>
-            <nav class="menu">
-                <ul id="menu-list" class="menu-list"></ul>
-            </nav>
+<header class="header">
+    <a href="index.html">
+        <img src="images/logo.png" class="logo-centre" alt="Logo">
+    </a>
+    <div class="header-content">
+        <div class="site-info-text">
+            <h1 class="site-name">Chargement...</h1>
+            <p class="site-slogan">Chargement...</p>
         </div>
-    </header>
+        <nav class="menu">
+            <ul id="menu-list" class="menu-list"></ul>
+        </nav>
+    </div>
+</header>
 
-    <main class="container">
-        <section class="presentation">
-            <div class="intro-text">Comment ce site a été construit</div>
-            <p>Ici, pas de constructeur de page automatique ou de solution toute faite. J'ai choisi de coder ce site à la main pour garder le contrôle total sur mon impact numérique et mon éthique.</p>
-            
-            <div class="grid-stack">
-                <div class="ethique-box">
-                    <h3>Frontend</h3>
-                    <ul class="ethique-list">
-                        <li><strong>HTML5</strong> - Structure sémantique</li>
-                        <li><strong>CSS3</strong> - Design & Flexbox</li>
-                        <li><strong>JavaScript</strong> - Logique dynamique</li>
-                    </ul>
-                </div>
+<main class="container">
+    <section class="presentation">
+        <h2>L'Envers du Décor</h2>
+        
+        <p class="intro-text">
+            Ici, pas de constructeur de page automatique ou de solution toute faite. 
+            J'ai choisi de coder ce site à la main pour garder le contrôle total sur mon projet.
+        </p>
 
-                <div class="ethique-box">
-                    <h3>Workflow</h3>
-                    <ul class="ethique-list">
-                        <li><strong>VS Code</strong> - Éditeur de code</li>
-                        <li><strong>Git</strong> - Gestion de version</li>
-                        <li><strong>GitHub</strong> - Hébergement</li>
-                    </ul>
-                </div>
-            </div>
+        <p style="color: white; text-align: center; margin-bottom: 30px;">
+            Découvrez comment ce site a été créé. Nowone vous présente les outils et technologies utilisés pour bâtir cette plateforme de recommandation.
+        </p>
 
-            <p class="engagement">Chaque ligne de code est écrite avec patience et curiosité.</p>
-        </section>
-    </main>
+        <div class="ethique-box">
+            <h3>Le Frontend (Le Visuel)</h3>
+            <ul>
+                <li><strong>HTML5</strong> : Pour une structure sémantique propre.</li>
+                <li><strong>CSS3</strong> : Pour le design, le mode sombre et les accents orange.</li>
+                <li><strong>JavaScript</strong> : Pour rendre le site dynamique (menu et catalogues).</li>
+            </ul>
+        </div>
 
-  <footer class="footer">
+        <div class="ethique-box" style="margin-top: 20px;">
+            <h3>Le Workflow (Les Outils)</h3>
+            <ul>
+                <li><strong>VS Code</strong> : Mon éditeur de code au quotidien.</li>
+                <li><strong>Git & GitHub</strong> : Pour sauvegarder mon travail et héberger le site.</li>
+                <li><strong>JSON</strong> : Pour gérer mes listes de livres facilement.</li>
+            </ul>
+        </div>
+
+        <p class="intro-text" style="margin-top: 40px; font-size: 1rem; opacity: 0.8;">
+            "Chaque ligne de code est écrite avec patience et curiosité."
+        </p>
+    </section>
+</main>
+
+<footer class="footer">
     <p>&copy; <span id="footer-year"></span> <span class="footer-name">NOWONE</span></p>
     <p style="margin-top: 20px;">
         <a href="mentions-legales.html" style="color: white; font-size: 0.8rem; opacity: 0.5; text-decoration: none;">Mentions Légales & Confidentialité</a>
     </p>
 </footer>
-    <script src="header.js"></script>
+
+<script src="header.js"></script>
 </body>
 </html>
