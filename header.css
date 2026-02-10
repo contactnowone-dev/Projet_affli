@@ -1,3 +1,4 @@
+
 /* ==========================================================================
    1. BASE & RÉGLAGES GÉNÉRAUX
    ========================================================================== */
@@ -164,7 +165,6 @@ body {
     margin-bottom: 25px;
 }
 
-/* Correction des boites et textes */
 .ethique-box {
     margin-top: 40px;
     padding: 30px;
@@ -235,8 +235,19 @@ body {
 /* ==========================================================================
    6. GRILLE PRODUITS & FOOTER
    ========================================================================== */
-.container { max-width: 1200px; margin: 40px auto; padding: 0 20px; flex: 1; width: 100%; }
-.grid-produits { display: grid; grid-template-columns: repeat(3, 1fr); gap: 45px; }
+.container { 
+    max-width: 1200px; 
+    margin: 40px auto; 
+    padding: 0 20px; 
+    flex: 1; 
+    width: 100%; 
+}
+
+.grid-produits { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 45px; 
+}
 
 .footer {
     background: rgba(0, 0, 0, 0.9);
@@ -246,19 +257,48 @@ body {
     color: white;
 }
 
-.footer p { font-size: 1.1rem; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; }
+.footer p { 
+    font-size: 1.1rem; 
+    font-weight: bold; 
+    letter-spacing: 2px; 
+    text-transform: uppercase; 
+}
 
 /* Responsive */
 @media (max-width: 600px) {
     .grid-stack {
         grid-template-columns: 1fr;
     }
+    .grid-produits {
+        grid-template-columns: 1fr;
+    }
 }
 
-.card img, .produit img {
-    width: 100%;       /* Prend toute la largeur de la carte */
-    height: 250px;     /* On force une hauteur identique pour tous */
-    object-fit: contain; /* L'image s'adapte sans être écrasée ou coupée */
-    background-color: #f9f9f9; /* Un petit fond gris si l'image est plus étroite */
-    margin-bottom: 10px;
+/* ==========================================================================
+   7. RÉGLAGE DES IMAGES PRODUITS (Le Correcteur)
+   ========================================================================== */
+.grid-produits img, .card img, .produit img {
+    width: 100% !important;
+    height: 300px !important;
+    object-fit: contain !important; 
+    background: rgba(255, 255, 255, 0.05); 
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.grid-produits > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s ease;
+}
+
+.grid-produits > div:hover {
+    transform: translateY(-5px);
+    border-color: #ff6600;
 }
