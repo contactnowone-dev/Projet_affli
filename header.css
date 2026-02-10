@@ -1,4 +1,3 @@
-
 /* ==========================================================================
    1. BASE & RÉGLAGES GÉNÉRAUX
    ========================================================================== */
@@ -45,6 +44,7 @@ body {
     border: 2px solid #ff6600;
     transition: 0.3s ease-in-out;
     cursor: pointer;
+    z-index: 10;
 }
 
 .logo-centre:hover {
@@ -136,124 +136,108 @@ body {
 }
 
 /* ==========================================================================
-   4. SECTION PRÉSENTATION & CONTENU
-   ========================================================================== */
-.presentation {
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 40px;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(15px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: white;
-    line-height: 1.8;
-}
-
-.presentation h2 {
-    color: white;
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 2.2rem;
-}
-
-.intro-text {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #ff6600 !important;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.ethique-box {
-    margin-top: 40px;
-    padding: 30px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
-    border-left: 5px solid #ff6600;
-    color: white;
-}
-
-.ethique-box h3 { color: #ff6600; margin-top: 0; }
-.ethique-box p { color: white; }
-
-.ethique-list { list-style: none; padding: 0; }
-.ethique-list li { margin-bottom: 10px; color: white; }
-
-.engagement { 
-    margin-top: 20px; 
-    font-weight: bold; 
-    text-align: center; 
-    border-top: 1px solid rgba(255,255,255,0.1); 
-    padding-top: 20px; 
-    color: white;
-}
-
-.grid-stack {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-top: 30px;
-}
-
-/* ==========================================================================
-   5. PAGE CONTACT
-   ========================================================================== */
-.contact-card {
-    max-width: 600px;
-    margin: 80px auto;
-    padding: 50px;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(15px);
-    border-radius: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    text-align: center;
-    color: white;
-}
-
-.contact-logo {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 30px;
-    border-radius: 50%;
-    border: 3px solid #ff6600;
-}
-
-.btn-contact {
-    display: inline-block;
-    background: #ff6600;
-    color: white;
-    text-decoration: none;
-    padding: 15px 40px;
-    border-radius: 50px;
-    font-weight: bold;
-    margin-top: 20px;
-    transition: 0.3s;
-}
-
-/* ==========================================================================
-   6. GRILLE PRODUITS & FOOTER
+   4. ZONE DE CONTENU (Main)
    ========================================================================== */
 .container { 
     max-width: 1200px; 
-    margin: 40px auto; 
+    margin: 60px auto; 
     padding: 0 20px; 
     flex: 1; 
     width: 100%; 
 }
 
+/* Phrase "Nos Sélections" personnalisée */
+.container h2 {
+    color: #ff6600 !important;
+    font-size: 3rem !important;
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   5. GRILLE PRODUITS (Cartes Mangas)
+   ========================================================================== */
 .grid-produits { 
     display: grid; 
     grid-template-columns: repeat(3, 1fr); 
     gap: 45px; 
 }
 
+.grid-produits > div, .produit-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s ease;
+}
+
+.grid-produits > div:hover, .produit-card:hover {
+    transform: translateY(-10px);
+    border-color: #ff6600;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* Images des mangas */
+.grid-produits img, .produit-image {
+    width: 100% !important;
+    height: 320px !important;
+    object-fit: contain !important; 
+    background: rgba(255, 255, 255, 0.05); 
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Titres des mangas dans les cartes */
+.grid-produits h3, .produit-info h3 {
+    color: #ff6600 !important;
+    margin: 10px 0;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/* Prix des mangas */
+.grid-produits p, .produit-info p {
+    color: #ff6600 !important;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 5px 0 15px 0;
+}
+
+/* Bouton Acheter */
+.btn-affiliation {
+    display: inline-block;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.btn-affiliation:hover {
+    background: #e65c00;
+    transform: scale(1.05);
+}
+
+/* ==========================================================================
+   6. FOOTER
+   ========================================================================== */
 .footer {
     background: rgba(0, 0, 0, 0.9);
     padding: 50px;
     text-align: center;
-    margin-top: auto;
+    margin-top: 80px;
     color: white;
 }
 
@@ -264,41 +248,15 @@ body {
     text-transform: uppercase; 
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-    .grid-stack {
-        grid-template-columns: 1fr;
-    }
-    .grid-produits {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* ==========================================================================
-   7. RÉGLAGE DES IMAGES PRODUITS (Le Correcteur)
+   7. RESPONSIVE
    ========================================================================== */
-.grid-produits img, .card img, .produit img {
-    width: 100% !important;
-    height: 300px !important;
-    object-fit: contain !important; 
-    background: rgba(255, 255, 255, 0.05); 
-    border-radius: 10px;
-    margin-bottom: 15px;
-    display: block;
+@media (max-width: 992px) {
+    .grid-produits { grid-template-columns: 1fr 1fr; }
 }
 
-.grid-produits > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: 0.3s ease;
-}
-
-.grid-produits > div:hover {
-    transform: translateY(-5px);
-    border-color: #ff6600;
+@media (max-width: 600px) {
+    .grid-produits { grid-template-columns: 1fr; }
+    .site-name { font-size: 2rem; }
+    .container h2 { font-size: 2rem !important; }
 }
