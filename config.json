@@ -3,14 +3,14 @@
   "slogan": "Votre guide vers vos prochaines lectures",
   "menu": [
     { "nom": "Accueil", "lien": "index.html" },
-    { "nom": "Mangas", "lien": "mangas.html" },
-    { "nom": "Romans", "lien": "romans.html" },
-    { "nom": "Fantasy", "lien": "fantasy.html" },
+    { "nom": "Mangas", "lien": "page01.html" },
+    { "nom": "Romans", "lien": "page02.html" },
+    { "nom": "Fantasy", "lien": "page03.html" },
     { "nom": "Contact", "lien": "contact.html" },
     { "nom": "L'Envers du Décor", "lien": "stack.html" }
   ],
   "produits": {
-    "mangas": [
+    "page01": [
       {
         "titre": "Look Back",
         "prix": "16.99€",
@@ -48,7 +48,7 @@
         "link": "https://amzn.to/4ckOICf"
       }
     ],
-    "romans": [
+    "page02": [
       { "titre": "Je suis Romane Monnier", "prix": "15.99€", "image": "https://m.media-amazon.com/images/I/81mYURm7UwL._SL1500_.jpg", "link": "https://amzn.to/4kw0v2L" },
       { "titre": "Méfie-toi", "prix": "23.00€", "image": "https://m.media-amazon.com/images/I/71fO4aDlErL._SL1285_.jpg", "link": "https://amzn.to/4a9IFiC" },
       { "titre": "La Mariée portait des bottes jaunes", "prix": "24.90€", "image": "https://m.media-amazon.com/images/I/61jQ0DdzcwL._SL1500_.jpg", "link": "https://amzn.to/4amL4oH" },
@@ -56,7 +56,7 @@
       { "titre": "Tout le monde aime Clara", "prix": "20.00€", "image": "https://m.media-amazon.com/images/I/71GcDFlXmWL._SL1500_.jpg", "link": "https://amzn.to/4a7yX02" },
       { "titre": "La mélodie du coeur qui bat", "prix": "9.90€", "image": "https://m.media-amazon.com/images/I/21aagdQe2xL.jpg", "link": "https://amzn.to/400z2wx" }
     ],
-    "fantasy": [
+    "page03": [
       {
         "titre": "Les Gardiens de Ravenwood Léveil des Anciens",
         "prix": "14.76€",
